@@ -7,11 +7,14 @@ programa {
   funcao verificacao() {
     inteiro i
     inteiro numeroMultiplicacao
+        inteiro numeroMultiplicado
 
-    escreva("Qual o número a ser multiplicado até 10? ")
+    escreva("Qual o nÃºmero a ser multiplicado? ")
     leia(numeroMultiplicacao)
+    escreva("Qual a quantidade que ", numeroMultiplicacao, " serÃ¡ multiplicado? ")
+    leia(numeroMultiplicado)
 
-      para(i = 1; i <= 10; i++) {
+      para(i = 1; i <= numeroMultiplicado; i++) {
         escreva(numeroMultiplicacao ," x ", i, " = ", numeroMultiplicacao * i, "\n")
     }
     verificacao()
